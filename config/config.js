@@ -1,7 +1,8 @@
 require('dotenv').config();
 
 module.exports = {
-  SESSION_ID:       process.env.SESSION_ID || '',
+  SESSION_ID:       process.env.SESSION_ID || 'INCONNU~XD~brgxDboB#k_26XIW2PYPDgjup96mGnOn11syzwwXp0SOLgzA6tNc
+    ',
   MONGODB_URI:      process.env.MONGODB_URI || '',
   BOT_NAME:         process.env.BOT_NAME || 'INCONNU XD V3',
   PREFIX:           process.env.PREFIX !== undefined ? (process.env.PREFIX === 'null' ? null : process.env.PREFIX) : '.',
