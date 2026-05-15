@@ -1,0 +1,28 @@
+name: inconnu-xd-v3
+services:
+  - name: bot
+    type: web
+    git:
+      repository: github.com/INCONNU-BOY/INCONNU-XD-V3
+      branch: main
+    build_command: npm install
+    run_command: npm start
+    ports:
+      - port: 3000
+        protocol: http
+    env:
+      - key: SESSION_ID
+        value: ""
+      - key: MONGODB_URI
+        value: ""
+      - key: OWNER_NUMBER
+        value: ""
+      - key: BOT_NAME
+        value: "INCONNU XD V3"
+      - key: PREFIX
+        value: "."
+      - key: LANGUAGE
+        value: "en"
+    scaling:
+      min: 1
+      max: 1
