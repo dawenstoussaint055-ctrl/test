@@ -1,0 +1,43 @@
+{
+  "name": "INCONNU XD V3",
+  "description": "Advanced WhatsApp Bot with 350+ commands",
+  "repository": "https://github.com/INCONNU-BOY/INCONNU-XD-V3",
+  "keywords": ["whatsapp", "bot", "baileys"],
+  "env": {
+    "SESSION_ID": {
+      "description": "Your session ID from https://inconnu-tech-web-session-id.onrender.com",
+      "required": true
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection string",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Your WhatsApp number (no + or spaces, e.g. 2250700000000)",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Your name",
+      "value": "INCONNU BOY"
+    },
+    "BOT_NAME": {
+      "description": "Bot name",
+      "value": "INCONNU XD V3"
+    },
+    "PREFIX": {
+      "description": "Command prefix",
+      "value": "."
+    },
+    "LANGUAGE": {
+      "description": "Bot language (en / fr / es)",
+      "value": "en"
+    },
+    "GEMINI_API_KEY": {
+      "description": "Google Gemini API key (optional, for AI commands)",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    { "url": "heroku/nodejs" }
+  ]
+}
